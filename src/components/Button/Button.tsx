@@ -1,7 +1,7 @@
 'use client';
 
 // import { getSize } from '@/shared/utils/getElementSize';
-import classNames from 'classNames';
+import classNames from 'classnames';
 import {
 	ButtonHTMLAttributes,
 	CSSProperties,

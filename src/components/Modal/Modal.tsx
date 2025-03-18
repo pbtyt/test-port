@@ -1,4 +1,4 @@
-import classNames from 'classNames';
+import classNames from 'classnames';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CSSProperties, memo, PropsWithChildren } from 'react';
 import { createPortal } from 'react-dom';

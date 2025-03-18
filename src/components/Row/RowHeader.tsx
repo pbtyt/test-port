@@ -1,4 +1,4 @@
-import classNames from 'classNames';
+import classNames from 'classnames';
 import styles from './Row.module.scss';
 
 export function RowHeader() {

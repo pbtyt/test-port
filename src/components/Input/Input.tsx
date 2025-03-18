@@ -1,4 +1,4 @@
-import classNames from 'classNames';
+import classNames from 'classnames';
 import { InputHTMLAttributes, memo } from 'react';
 import styles from './Input.module.scss';
 
