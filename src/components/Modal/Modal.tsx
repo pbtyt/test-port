@@ -13,7 +13,6 @@ interface ModalProps {
 	alignPos?: 'center' | 'top' | 'down';
 	style?: CSSProperties;
 	className?: string;
-	fullScreenModal?: boolean;
 }
 
 export const Modal = memo(
@@ -25,7 +24,7 @@ export const Modal = memo(
 		alignPos = 'center',
 		style,
 		className,
-		fullScreenModal,
+
 		children,
 	}: PropsWithChildren<ModalProps>) => {
 		const { ref: modalRef } = useOutside(true, onClose);
