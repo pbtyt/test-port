@@ -1,0 +1,76 @@
+@use '@styles/mixins' as m;
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	flex-direction: column;
+
+	background-color: #1a1a1a;
+
+	padding: 1rem;
+	border-radius: 10px;
+
+	@include m.mobile {
+	}
+
+	.coinsWrapper {
+		display: flex;
+		flex-direction: column;
+
+		width: 100%;
+
+		max-height: 200px;
+
+		overflow-y: auto;
+
+		.coin {
+			text-align: center;
+
+			display: flex;
+			width: 100%;
+
+			& > div {
+				flex-grow: 1;
+
+				padding: 0.75rem;
+
+				color: #fff;
+				font-weight: 500;
+			}
+
+			& > div:first-child {
+				text-align: start;
+			}
+
+			& > div:last-child {
+				text-align: end;
+
+				color: green;
+			}
+		}
+	}
+
+	.selectedCoinWrapper {
+		margin-top: 0.25rem;
+
+		text-align: center;
+		width: 100%;
+		font-weight: 500;
+		color: #fff;
+		font-size: 16px;
+
+		input {
+			margin-top: 0.4rem;
+		}
+
+		.controls {
+			margin-top: 1.2rem;
+			display: flex;
+			align-items: center;
+
+			gap: 1.5rem;
+		}
+	}
+}
